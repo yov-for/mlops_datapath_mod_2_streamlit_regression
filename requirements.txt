@@ -1,8 +1,12 @@
-uvicorn
-fastapi
-pandas
+streamlit
 python-multipart
-numpy
 joblib
-scikit-learn
+hydra-core>=1.3.2
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+ipykernel
 feature-engine
+scikit-learn

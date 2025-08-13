@@ -1,14 +1,5 @@
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+import streamlit as st
 
-app = FastAPI()
+st.title("Proyecto - Yovani Pahuara")
 
-# Endpoint raíz
-@app.get("/")
-def read_root():
-    return {"mensaje": "¡Bienvenido a mi API con FastAPI!"}
-
-# Endpoint GET adicional
-@app.get("/mensaje")
-def obtener_mensaje():
-    return JSONResponse(content={"mensaje": "Este es otro mensaje desde el endpoint /mensaje"})
+st.sidebar.write("Suba el archivo CSV Correspondiente para realizar la predicción")

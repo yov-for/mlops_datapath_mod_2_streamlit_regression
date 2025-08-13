@@ -19,7 +19,7 @@ COPY ./src ./src
 EXPOSE 8080
 
 # start the server
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080", "--proxy-headers"]
+ENTRYPOINT ["streamlit", "run", "src/streamlit_page.py", "--server.port=4000", "--server.address=0.0.0.0"]
 
 #gcloud artifacts repositories create repo-mlops9-inofuente --repository-format docker --project project-mlops9-inofuente --location us-central1
 

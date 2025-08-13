@@ -13,7 +13,7 @@ from feature_engine.encoding import OrdinalEncoder, RareLabelEncoder
 from sklearn.preprocessing import MinMaxScaler, Binarizer
 from sklearn.pipeline import Pipeline
 
-import src.input.preprocessors as pp
+import input.preprocessors as pp
 from configuraciones import config
 #------------------------------------------------------------------------------------------------
 

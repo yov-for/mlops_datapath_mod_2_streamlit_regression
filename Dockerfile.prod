@@ -16,10 +16,10 @@ ENV PYTHONPATH=/usr/src/app/src
 # copy src code
 COPY ./src ./src
 
-EXPOSE 4001
+EXPOSE 4000
 
 # start the server
-ENTRYPOINT ["streamlit", "run", "src/main.py", "--server.port=4001", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "src/main.py", "--server.port=4000", "--server.address=0.0.0.0"]
 
 #gcloud artifacts repositories create repo-mlops9-inofuente --repository-format docker --project project-mlops9-inofuente --location us-central1
 

@@ -1,12 +1,12 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: servicio-streamlit-model-ypahuara
+  name: servicio-streamlit-model2-ypahuara
 spec:
   template:
     spec:
       containers:
-        - image: us-central1-docker.pkg.dev/project-mlops-ypahuara/repo-deploy-streamlit-model-cicd/image-v1-deploy-model-cicd:latest
+        - image: us-central1-docker.pkg.dev/project-mlops-ypahuara/repo-deploy-streamlit-model-cicd/image-v2-deploy-model-cicd:latest
           env:
           ports:
-            - containerPort: 4000
+            - containerPort: 4001

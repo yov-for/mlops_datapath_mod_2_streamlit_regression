@@ -42,4 +42,4 @@ gcloud builds submit --config=cloudbuild.yaml --project project-mlops-ypahuara
 gcloud run services replace service.yaml --region us-central1 --project project-mlops-ypahuara
 
 ## Paso 4: OPCIONAL, Dar permisos de acceso a mi APLICACION. ESTO SE EJECUTA UNA SOLA VEZ
-gcloud run services set-iam-policy servicio-fastapi-kevin-inofuente gcr-service-policy.yaml --region us-central1 --project project-mlops-ypahuara
+gcloud run services set-iam-policy servicio-streamlit-model2-ypahuara gcr-service-policy.yaml --region us-central1 --project project-mlops-ypahuara

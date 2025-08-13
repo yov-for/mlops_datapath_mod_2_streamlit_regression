@@ -73,7 +73,7 @@ if st.sidebar.button("click aqui para enviar el CSV al Pipeline"):
             time.sleep(5)
             st.success('Listo!')
 
-            # Mostramos los resultados de la predicción
+            # Mostramos los resultados de la predicció
             st.write('Resultados de la predicción:')
             st.write(prediccion)
             st.write(prediccion_sin_escalar)

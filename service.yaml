@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: servicio-streamlit-model2-ypahuara
+  name: servicio-streamlit-model3-ypahuara
 spec:
   template:
     spec:

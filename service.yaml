@@ -9,4 +9,4 @@ spec:
         - image: us-central1-docker.pkg.dev/project-mlops-ypahuara/repo-deploy-streamlit-model-cicd/image-v1-deploy-model-cicd:latest
           env:
           ports:
-            - containerPort: 8080
+            - containerPort: 4000

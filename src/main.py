@@ -61,7 +61,7 @@ if uploaded_file is not None:
     st.dataframe(df_de_los_datos_subidos)
 #-------------------------------------------------------------------------------------------
 #Cargar el Modelo ML o Cargar el Pipeline
-pipeline_de_produccion = joblib.load('src/precio_casas_pipeline_random_forest.joblib') #src/
+pipeline_de_produccion = joblib.load('precio_casas_pipeline_random_forest.joblib') #src/
 
 if st.sidebar.button("click aqui para enviar el CSV al Pipeline"):
     if uploaded_file is None:

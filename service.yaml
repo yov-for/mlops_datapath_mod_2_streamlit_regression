@@ -1,12 +1,12 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: servicio-fastapi-kevin-inofuente
+  name: servicio-streamlit-model-ypahuara
 spec:
   template:
     spec:
       containers:
-        - image: us-central1-docker.pkg.dev/project-mlops-10-streamlit/repo-deploy-fastapi-cicd/image-v1-deploy-fastapi-cicd:latest
+        - image: us-central1-docker.pkg.dev/project-mlops-ypahuara/repo-deploy-streamlit-model-cicd/image-v1-deploy-model-cicd:latest
           env:
           ports:
             - containerPort: 8080

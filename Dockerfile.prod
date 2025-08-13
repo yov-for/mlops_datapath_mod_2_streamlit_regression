@@ -16,7 +16,7 @@ ENV PYTHONPATH=/usr/src/app/src
 # copy src code
 COPY ./src ./src
 
-EXPOSE 8080
+EXPOSE 4000
 
 # start the server
 ENTRYPOINT ["streamlit", "run", "src/streamlit_page.py", "--server.port=4000", "--server.address=0.0.0.0"]
